@@ -80,7 +80,25 @@ DeviceProcessEvents
 **Initiating Process Account Name:** lucky-man
 
 **Analysis:** The timestamp indicates that the initial opening and likely first use of the Chrome browser for browsing occurred immediately after installation.
+### 4. Unauthorized Chrome Extension Downloads:
 
+The following Chrome extension files (`.crx`) were downloaded to the target device:
+
+**Timestamp:** 12 Apr 2025 12:48:52 (BST)
+**File Name:** `1.0.0.17_llkgjffcdpffmhiakmfcdcblohccpfmo.crx`
+**Analysis:** This extension file was initially located in a temporary directory (`C:\Users\lucky-man\AppData\Local\Temp\chrome_BITS_2768_1563824855\`) and subsequently renamed. The involvement of Chrome's Background Intelligent Transfer Service (BITS) suggests this download might have occurred in the background, possibly initiated by the browser without direct user interaction at the time of download.
+
+**Timestamp:** 12 Apr 2025 12:50:12 (BST)
+**File Name:** `modkgipgommbdobanfinadelfafeiadk_21012.crx`
+**Analysis:** The creation of this `.crx` file directly within the Chrome Web Store downloads directory (`C:\Users\lucky-man\AppData\Local\Google\Chrome\User Data\Webstore Downloads\`) strongly indicates that this extension was downloaded directly from the Chrome Web Store by the user.
+
+**Timestamp:** 12 Apr 2025 13:06:44 (BST)
+**File Name:** `mpnfoddkacdjocmjaobmkcphfncdoogp_23869.crx`
+**Analysis:** Similar to the previous entry, the presence of this `.crx` file in the Chrome Web Store downloads directory confirms that it was also downloaded via the Chrome Web Store.
+
+**Timestamp:** 13 Apr 2025 11:34:59 (BST)
+**File Name:** `qualification_win32.crx`
+**Analysis:** This extension file was created in a temporary directory (`C:\Windows\SystemTemp\chrome_url_fetcher_5104_804268295\`). The `chrome_url_fetcher` process is often responsible for handling URL-based downloads within Chrome, suggesting this extension was likely downloaded through the browser, although not directly to the Web Store downloads folder.
 
 
 
