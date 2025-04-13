@@ -1,7 +1,7 @@
 # Threat Hunt Report: Unauthorized Chrome Extension Installation
 
 **Date:** April 13, 2025
-**Time:** 13:00 BST
+**Time:** 13:00 GMT
 **Target Device:** lucky-man
 **Analyst:** John Lunnon
 **Objective:** Investigate potential unauthorized Chrome extension installations on a new employee's device.
@@ -32,7 +32,7 @@ DeviceFileEvents
 ----
 ***Result:***
 
-Timestamp: 12 Apr 2025 12:38:53 (BST)
+Timestamp: 12 Apr 2025 12:38:53 (GMT)
 File Name: ChromeSetup.exe
 File Path: C:\Users\lucky-man\Downloads\
 Action Type: FileCreated
@@ -57,7 +57,7 @@ DeviceFileEvents
 
 **Result:**
 
-**Timestamp:** 12 Apr 2025 12:40:59 (BST)
+**Timestamp:** 12 Apr 2025 12:40:59 (GMT)
 **File Name:** chrome.exe
 **File Path:** `C:\Program Files\Google\Chrome\Application\`
 **Process Command Line:** `"chrome.exe" --from-installer`
@@ -88,7 +88,7 @@ DeviceFileEvents
 
 **Results:**
 
-**Timestamp:** 12 Apr 2025 12:40:59 (BST)
+**Timestamp:** 12 Apr 2025 12:40:59 (GMT)
 **File Name:** chrome.exe
 **File Path:** `C:\Program Files\Google\Chrome\Application\`
 **Process Command Line:** `"chrome.exe" --from-installer`
@@ -97,19 +97,19 @@ DeviceFileEvents
 
 **The following Chrome extension files (`.crx`) were downloaded to the target device:**
 
-**12 Apr 2025 12:48:52 (BST)**
+**12 Apr 2025 12:48:52 (GMT)**
 **File Name:** `1.0.0.17_llkgjffcdpffmhiakmfcdcblohccpfmo.crx`
 **Analysis:** This extension file was initially located in a temporary directory (`C:\Users\lucky-man\AppData\Local\Temp\chrome_BITS_2768_1563824855\`) and subsequently renamed. The involvement of Chrome's Background Intelligent Transfer Service (BITS) suggests this download might have occurred in the background, possibly initiated by the browser without direct user interaction at the time of download.
 
-**12 Apr 2025 12:50:12 (BST)** 
+**12 Apr 2025 12:50:12 (GMT)** 
 **File Name:** `modkgipgommbdobanfinadelfafeiadk_21012.crx`
 **Analysis:** The creation of this `.crx` file directly within the Chrome Web Store downloads directory (`C:\Users\lucky-man\AppData\Local\Google\Chrome\User Data\Webstore Downloads\`) strongly indicates that this extension was downloaded directly from the Chrome Web Store by the user.
 
-**12 Apr 2025 13:06:44 (BST)** 
+**12 Apr 2025 13:06:44 (GMT)** 
 **File Name:** `mpnfoddkacdjocmjaobmkcphfncdoogp_23869.crx`
 **Analysis:** Similar to the previous entry, the presence of this `.crx` file in the Chrome Web Store downloads directory confirms that it was also downloaded via the Chrome Web Store.
 
-**13 Apr 2025 11:34:59 (BST)** 
+**13 Apr 2025 11:34:59 (GMT)** 
 **File Name:** `qualification_win32.crx`
 **Analysis:** This extension file was created in a temporary directory (`C:\Windows\SystemTemp\chrome_url_fetcher_5104_804268295\`). The `chrome_url_fetcher` process is often responsible for handling URL-based downloads within Chrome, suggesting this extension was likely downloaded through the browser, although not directly to the Web Store downloads folder.
 
