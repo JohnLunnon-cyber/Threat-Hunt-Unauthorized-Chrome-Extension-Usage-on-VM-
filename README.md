@@ -26,6 +26,8 @@ DeviceFileEvents
 | project Timestamp, FileName, FolderPath, ActionType, InitiatingProcessAccountName
 
 ```
+<img width="608" alt="Screenshot 2025-04-13 at 16 26 17" src="https://github.com/user-attachments/assets/f1c1138c-474a-47fd-91fd-6ae85dc83225" />
+
 ***Result:***
 
 Timestamp: 12 Apr 2025 12:38:53 (BST)
