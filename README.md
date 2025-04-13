@@ -96,9 +96,9 @@ DeviceFileEvents
 **Initiating Process Account Name:** lucky-man
 
 
-The following Chrome extension files (`.crx`) were downloaded to the target device:
+**The following Chrome extension files (`.crx`) were downloaded to the target device:**
 
-** 12 Apr 2025 12:48:52 (BST)**
+**12 Apr 2025 12:48:52 (BST)**
 **File Name:** `1.0.0.17_llkgjffcdpffmhiakmfcdcblohccpfmo.crx`
 **Analysis:** This extension file was initially located in a temporary directory (`C:\Users\lucky-man\AppData\Local\Temp\chrome_BITS_2768_1563824855\`) and subsequently renamed. The involvement of Chrome's Background Intelligent Transfer Service (BITS) suggests this download might have occurred in the background, possibly initiated by the browser without direct user interaction at the time of download.
 
