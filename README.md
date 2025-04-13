@@ -113,6 +113,22 @@ DeviceFileEvents
 **File Name:** `qualification_win32.crx`
 **Analysis:** This extension file was created in a temporary directory (`C:\Windows\SystemTemp\chrome_url_fetcher_5104_804268295\`). The `chrome_url_fetcher` process is often responsible for handling URL-based downloads within Chrome, suggesting this extension was likely downloaded through the browser, although not directly to the Web Store downloads folder.
 
+----
+## MITRE ATT&CK Framework Mapping
+
+The activity observed in this threat hunt can be mapped to the following MITRE ATT&CK techniques:
+
+* **TA0007: Discovery**
+    * **T1083: File and Directory Discovery:** The queries used to identify `.crx` files fall under this technique as they are searching for specific file types on the endpoint.
+* **TA0003: Persistence**
+    * **T1600: Browser Extensions:** The installation of unauthorized Chrome extensions can serve as a persistence mechanism, allowing an attacker to maintain access or execute malicious code even after the initial access method is closed. While we have only observed downloads, successful installation would fall under this technique.
+* **TA0011: Command and Control (Potential)**
+    * Malicious browser extensions can be used to establish command and control channels. While not directly observed in the downloads, this is a potential risk associated with unauthorized extensions.
+* **TA0001: Initial Access (Potential)**
+    * In some scenarios, malicious extensions could be a vector for initial access if a user is tricked into installing them from a compromised website or via social engineering.
+
+**Note:** This mapping is based on the observed file downloads. Further analysis of the installed extensions (as recommended) is necessary for a more accurate and comprehensive MITRE ATT&CK mapping.
+
 
 ## Summary
 
