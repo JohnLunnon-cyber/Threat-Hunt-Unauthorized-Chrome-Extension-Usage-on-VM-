@@ -74,7 +74,8 @@ DeviceProcessEvents
 ###: Chrome Extension Downloads on lucky-man
 
 This report details the identified Chrome extension downloads on the target device "lucky-man" based on the provided `DeviceFileEvents` log data. The analysis focuses on files with the `.crx` extension, which is the standard package format for Chrome extensions.
-
+----
+### 4. Unauthorized Chrome Extension Downloads:
 **Query Used to locate the extensions being installed:**
 
 //This shows chrome extensions being installed
@@ -94,8 +95,6 @@ DeviceFileEvents
 **Process Command Line:** `"chrome.exe" --from-installer`
 **Initiating Process Account Name:** lucky-man
 
-**Analysis:** The timestamp indicates that the initial opening and likely first use of the Chrome browser for browsing occurred immediately after installation.
-### 4. Unauthorized Chrome Extension Downloads:
 
 The following Chrome extension files (`.crx`) were downloaded to the target device:
 
