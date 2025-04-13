@@ -41,11 +41,11 @@ Initiating Process Account Name: lucky-man
 
 **Query used to locate:**
 
-DeviceProcessEvents
+DeviceFileEvents
 | where DeviceName == "lucky-man"
 | where FileName startswith "chrome" and FileName endswith ".exe"
 | order by Timestamp asc
-| project Timestamp, FileName, FolderPath, ProcessCommandLine, InitiatingProcessAccountName
+| project Timestamp, FileName, FolderPath, ActionType, InitiatingProcessAccountName
 
 
 **Result:**
