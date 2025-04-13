@@ -1,1 +1,1 @@
-# Threat-Hunt-Unauthorized-Chrome-Extension-Usage-on-VM-
+# Threat-Hunt-Unauthorized-Chrome-Extension
