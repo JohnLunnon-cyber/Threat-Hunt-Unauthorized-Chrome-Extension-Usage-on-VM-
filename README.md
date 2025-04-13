@@ -58,3 +58,31 @@ DeviceFileEvents
 **Initiating Process Account Name:** lucky-man
 
 **Analysis:** The Chrome browser was installed to the standard program files directory. The command-line argument `--from-installer` indicates that the browser was launched immediately following the installation process.
+
+----
+### 3. First Chrome Browser Usage:
+
+**Query used to locate:**
+```kql
+DeviceProcessEvents
+| where DeviceName == "lucky-man"
+| where FileName == "chrome.exe"
+| order by Timestamp asc
+| project Timestamp, FileName, FolderPath, ProcessCommandLine, InitiatingProcessAccountName
+
+```
+**Result:**
+
+**Timestamp:** 12 Apr 2025 12:40:59 (BST)
+**File Name:** chrome.exe
+**File Path:** `C:\Program Files\Google\Chrome\Application\`
+**Process Command Line:** `"chrome.exe" --from-installer`
+**Initiating Process Account Name:** lucky-man
+
+**Analysis:** The timestamp indicates that the initial opening and likely first use of the Chrome browser for browsing occurred immediately after installation.
+
+
+
+
+
+
