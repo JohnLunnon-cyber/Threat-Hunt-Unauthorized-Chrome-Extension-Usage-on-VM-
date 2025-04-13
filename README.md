@@ -65,22 +65,12 @@ DeviceFileEvents
 **Analysis:** The Chrome browser was installed to the standard program files directory. The command-line argument `--from-installer` indicates that the browser was launched immediately following the installation process.
 
 ----
-### 3. First Chrome Browser Usage:
 
-**Query used to locate:**
-```kql
-DeviceProcessEvents
-| where DeviceName == "lucky-man"
-| where FileName == "chrome.exe"
-| order by Timestamp asc
-| project Timestamp, FileName, FolderPath, ProcessCommandLine, InitiatingProcessAccountName
-
-```
 ###: Chrome Extension Downloads on lucky-man
 
 This report details the identified Chrome extension downloads on the target device "lucky-man" based on the provided `DeviceFileEvents` log data. The analysis focuses on files with the `.crx` extension, which is the standard package format for Chrome extensions.
 ----
-### 4. Unauthorized Chrome Extension Downloads:
+### 3. Unauthorized Chrome Extension Downloads:
 **Query Used to locate the extensions being installed:**
 
 //This shows chrome extensions being installed
