@@ -71,6 +71,21 @@ DeviceProcessEvents
 | project Timestamp, FileName, FolderPath, ProcessCommandLine, InitiatingProcessAccountName
 
 ```
+###: Chrome Extension Downloads on lucky-man
+
+This report details the identified Chrome extension downloads on the target device "lucky-man" based on the provided `DeviceFileEvents` log data. The analysis focuses on files with the `.crx` extension, which is the standard package format for Chrome extensions.
+
+**Query Used to locate the extensions being installed:**
+
+//This shows chrome extensions being installed
+```kql
+DeviceFileEvents
+| where DeviceName == "lucky-man"
+| where FolderPath contains "Chrome"
+| order by Timestamp asc
+| project Timestamp, FileName, FolderPath, ActionType
+
+```
 **Result:**
 
 **Timestamp:** 12 Apr 2025 12:40:59 (BST)
