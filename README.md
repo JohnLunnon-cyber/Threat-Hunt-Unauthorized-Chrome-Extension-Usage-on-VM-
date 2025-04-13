@@ -88,7 +88,7 @@ DeviceFileEvents
 
 **Results:**
 
-**Timestamp:** 12 Apr 2025 12:40:59 (GMT)
+**Timestamp:** 12 Apr 2025 12:48:52 (GMT)
 **File Name:** chrome.exe
 **File Path:** `C:\Program Files\Google\Chrome\Application\`
 **Process Command Line:** `"chrome.exe" --from-installer`
