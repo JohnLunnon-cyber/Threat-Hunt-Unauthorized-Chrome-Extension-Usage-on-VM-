@@ -118,7 +118,9 @@ DeviceFileEvents
 
 The analysis of the `DeviceFileEvents` log reveals four distinct instances of Chrome extension files being downloaded on the target device "lucky-man" between April 12th and April 13th, 2025. Two of these downloads originated from the Chrome Web Store, while the other two were downloaded to temporary locations by Chrome processes, potentially before installation or as part of a different installation method. Further investigation into subsequent file activity or registry changes around these timestamps might provide more insight into whether these extensions were successfully installed and became active in the Chrome browser.
 
-## 🔍 Recommendations**
+This report was then forwarded onto management to further discuss with VM user (lucky-man)
+
+## 🔍 Recommendations
 
 **Investigate Installed Extensions:** On the "lucky-man" VM, navigate to `chrome://extensions/` to identify the installed extensions.
 
