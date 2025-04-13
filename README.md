@@ -25,6 +25,12 @@ DeviceFileEvents
 | order by Timestamp asc
 | project Timestamp, FileName, FolderPath, ActionType, InitiatingProcessAccountName
 
+DeviceFileEvents
+| where DeviceName == "lucky-man"
+| where FileName startswith "chrome" and FileName endswith ".exe"
+| order by Timestamp asc
+| project Timestamp, FileName, FolderPath, ActionType, InitiatingProcessAccountName
+
 ***Result:
 
 **Timestamp: 12 Apr 2025 12:38:53 (BST)
