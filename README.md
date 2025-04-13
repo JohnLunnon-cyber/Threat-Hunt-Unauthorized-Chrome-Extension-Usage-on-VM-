@@ -35,3 +35,25 @@ Action Type: FileCreated
 Initiating Process Account Name: lucky-man
 
 **Analysis:** The user "lucky-man" downloaded the Chrome browser installer (ChromeSetup.exe) to their virtual machine's downloads folder. This action itself is not necessarily malicious but serves as the precursor to browser usage and potential extension installations.
+
+----
+**2. Chrome Browser Installation:**
+
+**Query used to locate:**
+
+DeviceProcessEvents
+| where DeviceName == "lucky-man"
+| where FileName startswith "chrome" and FileName endswith ".exe"
+| order by Timestamp asc
+| project Timestamp, FileName, FolderPath, ProcessCommandLine, InitiatingProcessAccountName
+
+
+**Result:**
+
+**Timestamp:** 12 Apr 2025 12:40:59 (BST)
+**File Name:** chrome.exe
+**File Path:** `C:\Program Files\Google\Chrome\Application\`
+**Process Command Line:** `"chrome.exe" --from-installer`
+**Initiating Process Account Name:** lucky-man
+
+**Analysis:** The Chrome browser was installed to the standard program files directory. The command-line argument `--from-installer` indicates that the browser was launched immediately following the installation process.
