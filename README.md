@@ -67,7 +67,7 @@ DeviceFileEvents
 
 ----
 
-###: Chrome Extension Downloads on lucky-man
+###: Chrome Extension Downloads on lucky-man.
 
 This report details the identified Chrome extension downloads on the target device "lucky-man" based on the provided `DeviceFileEvents` log data. The analysis focuses on files with the `.crx` extension, which is the standard package format for Chrome extensions.
 ----
